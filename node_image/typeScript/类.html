@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //   es5 类
+    // function person(){
+    //     this.name = '大哥'
+    // }
+    // var p = new person();
+    // console.log(p.name)
+    // 构造函数和原型链
+    // 实例方法new，静态方法直接调用
+    // 
+            // function person () {
+            // this.name = '大哥';
+            // }
+            // person.prototype.say = function () {
+            // //person 原型链上的方法并没有被 Child1 所继承
+            // console.log('大哥你好')
+            // };
+            // function Child1 () {
+            // person.call(this);//apply；改变函数运行的上下文（将父级的构造函数this指向子构造函数的实例上）
+            // this.type = 'child1';
+            // }
+            // let child = new Child1();
+            //  console.log(child.name)  //大哥
+            //  console.log(child.say()) //无法继承原型链，报错TypeError: child.say is not a function
+            // 
+            // function person() {
+            //     this.name = '大哥';
+            //     this.say = '你好';
+            // }
+            // function Child2() {
+            //     this.type = 'child2';
+            // }
+            // Child2.prototype = new person();//new Child2().__proto__===Child2.prototype
+            // var son = new Child2();
+            // console.log(son.name + son.say);//
+            //缺点，虽然父类的实例成为了子类的原型对象，子类实例都能使用到父类的方法跟数据，但是每次实例化子类，都共用同一个父类实例
+            //改变原型对象会改变父类实例的数据，从而导致两边的原型对象数据都改变
+
+        //     function person() {
+        //     this.name = '大哥';
+        //     this.say = '你好';
+        // }
+        // function son() {
+        //     person.call(this); //在子构造函数中执行父级构造函数
+        //     this.type = 'nndx';
+        // }
+        // son.prototype = new person();
+    
+        // var son1 = new son();
+    
+        // console.log(son1,"在子构造函数中执行父级构造函数") //{name: "大哥",say: "你好",type: "nndx"}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

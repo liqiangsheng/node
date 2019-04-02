@@ -10,8 +10,7 @@ var mkdirp = require('mkdirp');
 var url = 'https://www.helijia.com/';
 
 //本地存储目录到c盘
-var dir = 'C:/Users/user/Desktop/yunyunyun/nuxtLX/node_image/pachong/images';
-
+var dir = 'C:/Users/user/Desktop/yunyunyun/nuxtLX/node/node_image/pachong/images';
 
 //发送请求
 request(url, function(error, response, body) {
